@@ -81,14 +81,14 @@ $(function() {
     // screw up the classic f7Panel style in dark mode
     // The sidebar background has to be slightly lighter than the main background
     var sidebarPanel = $("#f7-sidebar-view").find(".page-content");
-    $(sidebarPanel).css("background-color", "#1e1e1e");
+    $(sidebarPanel).css("background-color", "var(--f7-theme-color-shade)");
     // we also need to darken sidebar items in the sidebar menu
     // the default color does not contrast enough with the
     // new sidebar background
     var sidebarItems = $("#f7-sidebar-view").find("li");
     $(sidebarItems).css("background-color", "#171717");
   } else {
-    $("div.messages").css("background-color", "gainsboro");
+    $("div.messages").css("background-color", "var(--f7-theme-color-shade)");
     // fix photo browser links issue
     $("a").on("click", function() {
       setTimeout(function() {
